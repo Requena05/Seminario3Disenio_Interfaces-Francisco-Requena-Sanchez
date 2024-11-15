@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VistaAMiGustoActivity"
-    android:layout_margin="10dp"
+    android:layout_margin="15dp"
     android:background="#AEE1BEE7"
     >
 
@@ -42,9 +42,9 @@
         />
     <Button
         android:id="@+id/MostrarEjercicios"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Mostrar Ejercicios"
+        android:text="Mostrar "
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,15 +86,26 @@
     </ScrollView>
     <Button
         android:id="@+id/OcultarEjercicios"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Ocutar Ejercicios"
+        android:text="Ocutar"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />
 
+
+    <Button
+    android:id="@+id/BorrarBuscador"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Borrar buscador"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="40dp"
+    app:layout_constraintStart_toEndOf="@id/MostrarEjercicios"
+    app:layout_constraintEnd_toStartOf="@id/OcultarEjercicios"
+    app:layout_constraintBottom_toBottomOf="parent"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
