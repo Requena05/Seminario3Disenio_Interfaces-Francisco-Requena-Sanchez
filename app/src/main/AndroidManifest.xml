@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Seminario3Disenio_InterfacesFranciscoRequenaSanchez"
         tools:targetApi="31">
         <activity
+            android:name=".Ejercicio04Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Maquetacion03Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Maquetacion02Activity"
+            android:exported="false" />
+        <activity
             android:name=".Maquetacion01Activity"
             android:exported="false" />
         <activity
