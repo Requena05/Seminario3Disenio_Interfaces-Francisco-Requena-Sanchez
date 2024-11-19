@@ -10,60 +10,35 @@
     android:background="#FFEBEE"
     >
     <TextView
-        android:id="@+id/introducirdatos"
+        android:id="@+id/listadecadenas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:background="#EDE7F6"
-        android:text="Introducir datos"
+        android:text="lista de cadenas"
         android:gravity="center"
+        android:textSize="20dp"
         android:textColor="@color/black"
         android:fontFamily="sans-serif-black"
         android:elevation="5dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:background="#EDE7F6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         />
-        <LinearLayout
+        <TextView
+            android:id="@+id/contenidocadenas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:elevation="5dp"
+            android:background="#EDE7F6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/introducirdatos"
-            android:background="@color/white"
-            android:elevation="5dp"
             android:layout_marginTop="20dp"
-            >
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="cadena a introducir"
-                    android:id="@+id/cadena"/>
-            </com.google.android.material.textfield.TextInputLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textColor="@color/black"
-                    android:text="Introducir lista"
-                    android:layout_margin="20dp"
-                    android:background="@color/rosa"/>
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textColor="@color/black"
-                    android:text="ver lista en otra actividad"
-                    android:layout_margin="20dp"
-                    android:background="@color/rosa"/>
-            </LinearLayout>
-        </LinearLayout>
+            app:layout_constraintTop_toBottomOf="@id/listadecadenas"
+
+            />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

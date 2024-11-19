@@ -22,6 +22,8 @@ class VistaAMiGustoActivity : AppCompatActivity() {
     private lateinit var ejercicio3: ImageButton
     private lateinit var ejercicio4: ImageButton
     private lateinit var ejercicio5: ImageButton
+    private lateinit var ejercicio6: ImageButton
+    private lateinit var ejercicio7: ImageButton
     private lateinit var boton3: Button
     private lateinit var contenido: TextView
 
@@ -39,6 +41,9 @@ class VistaAMiGustoActivity : AppCompatActivity() {
         ejercicio3 = findViewById(R.id.Ejercicio3)
         ejercicio4 = findViewById(R.id.Ejercicio4)
         ejercicio5 = findViewById(R.id.Ejercicio5)
+        ejercicio6 = findViewById(R.id.Ejercicio6)
+        ejercicio7 = findViewById(R.id.Ejercicio7)
+
 
 
 
@@ -85,6 +90,11 @@ class VistaAMiGustoActivity : AppCompatActivity() {
             val intent = Intent(this, Ejercicio05Activity::class.java)
             startActivity(intent)
         }
+        ejercicio6.setOnClickListener {
+            val intent = Intent(this, Ejercicio06Activity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }
