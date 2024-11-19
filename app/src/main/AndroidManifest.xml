@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Seminario3Disenio_InterfacesFranciscoRequenaSanchez"
         tools:targetApi="31">
         <activity
+            android:name=".Ejercicio06RecibirActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio06Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio05RecibirActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio05Activity"
+            android:exported="false" />
+        <activity
             android:name=".Ejercicio04Activity"
             android:exported="false" />
         <activity

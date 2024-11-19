@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejercicio05Activity"
+    android:padding="20dp"
+    android:background="#F3E5F5"
+
+    >
+    <TextView
+        android:id="@+id/pasardatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/formulario"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:elevation="5dp"
+        android:background="@color/white"
+        android:text="Pasar Datos"
+
+        />
+   <LinearLayout
+       android:id="@+id/formulario"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:elevation="5dp"
+       android:background="#FFEBEE"
+       android:orientation="vertical"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/pasardatos"
+       android:layout_marginTop="20dp"
+       >
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/camponumero"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="30dp"
+           >
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/numero"
+               android:layout_width="match_parent"
+               android:layout_height="61dp"
+               android:hint="Introduce numero"
+               android:inputType="number" />
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/camponombre"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="30dp"
+           >
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="Introduce un nombre"
+                       android:id="@+id/nombre"
+                       android:inputType="text"
+                       />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+   </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/introducirdatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/formulario"
+        app:layout_constraintEnd_toEndOf="@id/formulario"
+        app:layout_constraintTop_toBottomOf="@id/formulario"
+        android:layout_margin="20dp"
+        android:text="Introducir Datos"
+        android:textColor="@color/black"
+        android:background="@color/rosa"
+        android:backgroundTint="#FFEBEE"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

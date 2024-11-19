@@ -80,17 +80,25 @@
            android:gravity="center"
            >
 
-           <Button
+           <androidx.appcompat.widget.AppCompatButton
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="fhiuewfw"
                android:layout_marginEnd="30dp"
+               android:layout_margin="20dp"
+               android:text="Introducir Datos"
+               android:textColor="@color/black"
+               android:background="@color/black"
+               android:backgroundTint="#FFEBEE"
                />
-           <Button
+           <androidx.appcompat.widget.AppCompatButton
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="fhiuewfw"
-               android:layout_marginStart="30dp"
+               android:layout_marginEnd="30dp"
+               android:layout_margin="20dp"
+               android:text="Borrar Datos"
+               android:textColor="@color/black"
+               android:background="@color/black"
+               android:backgroundTint="#FFEBEE"
                />
 
        </LinearLayout>
